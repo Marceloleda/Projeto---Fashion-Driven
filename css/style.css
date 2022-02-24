@@ -1,0 +1,25 @@
+.topo{
+    background-color: #404EED;
+    height: 89px;
+    width: 100vw;
+    margin-top: 0px;
+    display: flex;
+    justify-content: left;
+}
+h1{
+    margin-left: 16px; 
+    margin-top: 30.36px; 
+    color: white;
+    font-family: 'New Rocker', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 39px;
+
+}
+.logoimg{
+    height: 56.64px;
+    width: 55.98px;
+    margin-top:16.18px;
+    margin-left: 80.04px;;
+}
