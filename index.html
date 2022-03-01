@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/mobile.css"> -->
-    <!-- Fonte -->
+    <!-- Fonte 1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <!-- Fonte 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- título -->
     <title>Fashion Driven</title>
     <!-- ícone da aba -->
@@ -17,13 +21,99 @@
 </head>
 <body>
     <header class="topo">
-        <img class="logoimg" src="./imagens/Group 177.svg" alt="logo Fashion">
+        <img class="logoimg" src="./imagens/Group 177.svg" alt="logo Fashion"/>
         <h1>FashionDriven</h1>
         
     </header>
-    <main>
-        <ul class="cartas"></ul>
+<section class="menu">
+    <main class="botões">
+        <!-----------Opções de roupa------>
+        
+        <div class="texto">        
+            <h2>Escolha o modelo</h2>
+            <div class="conteiner">
+                <div class="opção">
+                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                        <img class="imgTipos" src="./imagens/tshirt 2.svg" alt="modelo"/>
+                    </div>
+                    <h2>T-shirt</h2>
+                </div> 
+                <div class="opção">
+                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                        <img class="imgTipos" src="./imagens/tank-top 1.svg" alt="modelo"/>
+                    </div>
+                    <h2>Camiseta</h2>
+                </div>  
+                <div class="opção">
+                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                        <img class="imgTipos" src="./imagens/long-sleeves 1.svg" alt="modelo"/>
+                    </div>
+                    <h2>Manga longa</h2>
+                </div>         
+            </div>
+        </div>
+
+        <div class="texto">        
+            <h2>Escolha o modelo</h2>
+            <div class="conteiner">
+                <div class="opção">
+                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                        <img class="imgTipos" src="./imagens/v-neck (1) 1.svg" alt="modelo"/>
+                    </div>
+                    <h2>Gola V</h2>
+                </div> 
+                <div class="opção">
+                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                        <img class="imgTipos" src="./imagens/shirt 1.svg" alt="modelo"/>
+                    </div>
+                    <h2>Gola Redonda</h2>
+                </div>  
+                <div class="opção">
+                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                        <img class="imgTipos" src="./imagens/polo-shirt (1) 1.svg" alt="modelo"/>
+                    </div>
+                    <h2>Gola polo</h2>
+                </div>         
+            </div>
+        </div>
+
+        <div class="texto">        
+            <h2>Escolha o modelo</h2>
+            <div class="conteiner">
+                <div class="opção">
+                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                        <img class="imgTipos" src="./imagens/silk 1.svg" alt="modelo"/>
+                    </div>
+                    <h2>Seda</h2>
+                </div> 
+                <div class="opção">
+                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                        <img class="imgTipos" src="./imagens/organic-cotton 1.svg" alt="modelo"/>
+                    </div>
+                    <h2>Algodão</h2>
+                </div>  
+                <div class="opção">
+                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                        <img class="imgTipos" src="./imagens/quimica 1.svg" alt="modelo"/>
+                    </div>
+                    <h2>Poliéster</h2>
+                </div>         
+            </div>
+        </div>
     </main>
+
+    <footer class="pedido">
+        <div class="textoFooter">
+            <h2>Imagem de referência</h2>
+        </div>
+    </footer>
+    
+    <div class="banner">
+        <img class="modeloimg" src="./imagens/Fashion.svg" alt="modelo"/>
+    </div>
+</section>
+
+<!-- Script -->
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/script.js"></script>
 </body>
