@@ -86,7 +86,7 @@ h2{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 0.5px solid #C4C4C4;
+    border: 3px solid #C4C4C4;
 }
 .opção{   
     display: flex;
@@ -117,4 +117,38 @@ button{
     border-style:none;
     margin-top: 25px;
     color: white;
+}
+.servidor{
+    width: 100%;
+    background-color: #F2F2F2;
+    height: 100%;
+    margin-top: 125px;
+    display: flex;
+}
+.textPedidos{
+    margin-left: 190px;
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 60px;
+}
+.conteinerPedidos{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    width: 1150px;
+    background-color: #F2F2F2;
+    overflow:hidden;
+    overflow-x:scroll;
+    gap: 30px;
+}
+.ultimosPedidos{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 260px;
+    min-width: 200px; 
+    background-color: white;
+    border-radius: 15px;
 }

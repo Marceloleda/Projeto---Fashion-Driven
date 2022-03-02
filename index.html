@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <!-- <link rel="stylesheet" href="css/mobile.css"> -->
     <!-- Fonte 1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,7 @@
     <title>Fashion Driven</title>
     <!-- ícone da aba -->
     <link rel="shortcut icon" type="image/x-icon" href="./imagens/Group 177.png">
+
 </head>
 <body>
     <header class="topo">
@@ -27,98 +28,105 @@
     </header>
 <section class="menu">
     <main class="botões">
-        <!-----------Opções de roupa------>
-        
+        <!-----------Opções de roupa------>    
         <div class="texto">        
             <h2>Escolha o modelo</h2>
             <div class="conteiner">
                 <div class="opção">
-                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                    <div id="t-shirt" class="modelo" onclick="escolherTshirt()">
                         <img class="imgTipos" src="./imagens/tshirt 2.svg" alt="modelo"/>
                     </div>
                     <h2>T-shirt</h2>
                 </div> 
                 <div class="opção">
-                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                    <div id="camiseta" class="modelo" onclick="escolherCamiseta()">
                         <img class="imgTipos" src="./imagens/tank-top 1.svg" alt="modelo"/>
                     </div>
                     <h2>Camiseta</h2>
                 </div>  
                 <div class="opção">
-                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                    <div id="mangaLonga" class="modelo" onclick="escolherMangaLonga()">
                         <img class="imgTipos" src="./imagens/long-sleeves 1.svg" alt="modelo"/>
                     </div>
                     <h2>Manga longa</h2>
                 </div>         
             </div>
         </div>
-
         <div class="texto">        
             <h2>Escolha a gola</h2>
             <div class="conteiner">
                 <div class="opção">
-                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                    <div id="golav" class="modelo" onclick="escolherGolaV()">
                         <img class="imgTipos" src="./imagens/v-neck (1) 1.svg" alt="modelo"/>
                     </div>
                     <h2>Gola V</h2>
                 </div> 
                 <div class="opção">
-                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                    <div id="golaRedonda" class="modelo" onclick="escolherGolaRedonda()">
                         <img class="imgTipos" src="./imagens/shirt 1.svg" alt="modelo"/>
                     </div>
                     <h2>Gola Redonda</h2>
                 </div>  
                 <div class="opção">
-                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                    <div id="golaPolo" class="modelo" onclick="escolherGolaPolo()">
                         <img class="imgTipos" src="./imagens/polo-shirt (1) 1.svg" alt="modelo"/>
                     </div>
                     <h2>Gola polo</h2>
                 </div>         
             </div>
         </div>
-
         <div class="texto">        
             <h2>Escolha o tecido</h2>
             <div class="conteiner">
                 <div class="opção">
-                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                    <div id="seda" class="modelo" onclick="escolherSeda()">
                         <img class="imgTipos" src="./imagens/silk 1.svg" alt="modelo"/>
                     </div>
                     <h2>Seda</h2>
                 </div> 
                 <div class="opção">
-                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                    <div id="algodão" class="modelo" onclick="escolherAlgodao()">
                         <img class="imgTipos" src="./imagens/organic-cotton 1.svg" alt="modelo"/>
                     </div>
                     <h2>Algodão</h2>
                 </div>  
                 <div class="opção">
-                    <div id="t-shirt" class="modelo" onclick="escolherModelo()">
+                    <div id="poliéster" class="modelo" onclick="escolherPoliester()">
                         <img class="imgTipos" src="./imagens/quimica 1.svg" alt="modelo"/>
                     </div>
                     <h2>Poliéster</h2>
                 </div>         
             </div>
         </div>
+        <!-- ---------botão enviar---------- -->
         <div class="texto">
             <h2>Imagem de referência</h2>
             <footer class="pedido">
-                <div class="input">
-                    <input type="text" placeholder="Insira o link aqui. . ." />
-                </div>
                 <div>
-                    <a href="#"><button>Confirmar pedido</button></a>
+                    <input type="text" placeholder="Insira o link aqui. . ." id="texto" onblur="link()">
+                </div>
+                <div >
+                    <button onclick="confirmação()" id="botão">Confirmar pedido</button>
                 </div>
             </footer>
         </div>
     </main>
     <div class="banner">
         <img class="modeloimg" src="./imagens/Fashion.svg" alt="modelo"/>
-    </div> 
+    </div>
+    <!-- -------------camisas postadas no servidor--------------- -->
 </section>
-
+<div class="servidor">
+    <h2 class="textPedidos">Ultimos pedidos
+    <div class="conteinerPedidos">
+        <div class="ultimosPedidos">
+        </div>
+    </div>
+    </h2>
+</div>
 <!-- Script -->
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+    <script src="./script/script.js"></script>
 </body>
 </html>
